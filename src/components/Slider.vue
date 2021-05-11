@@ -2,13 +2,13 @@
 	<div class="py-4 relative">
 		<g-image :src="getStrapiMedia(data.images[parsedSelectedIndex].url)" />
 		<button
-			class="absolute p-3 left-0 text-2xl text-primary z-10"
+			class="absolute p-3 left-0 text-2xl text-white bg-primary z-10"
 			@click="previousImage()"
 		>
 			<font-awesome icon="chevron-circle-left" />
 		</button>
 		<button
-			class="absolute p-3 right-0 text-2xl text-primary z-10"
+			class="absolute p-3 right-0 text-2xl text-white bg-primary z-10"
 			@click="nextImage()"
 		>
 			<font-awesome icon="chevron-circle-right" />

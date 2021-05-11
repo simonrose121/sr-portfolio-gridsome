@@ -1,6 +1,6 @@
 <template>
 	<footer class="mt-24 pt-8 pb-8 bg-gray-200">
-		<p class="container text-xl font-medium">
+		<p class="container text-m font-medium">
 			&copy; {{ $static.strapi.global.copyright }} {{ year }}
 		</p>
 	</footer>
