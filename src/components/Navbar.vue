@@ -10,7 +10,7 @@
 				</g-link>
 				<button
 					@click="menuVisible = !menuVisible"
-					class="absolute right-0 pr-3 md:hidden"
+					class="absolute right-0 pr-3 text-xl md:hidden"
 				>
 					<font-awesome :icon="hamburgerIcon" />
 				</button>

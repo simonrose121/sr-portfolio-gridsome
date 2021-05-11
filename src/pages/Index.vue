@@ -2,12 +2,12 @@
 	<Layout>
 		<div class="container">
 			<div class="flex md:justify-end md:w-1/5">
-				<h1 class="text-3xl pt-24 mb-6 uppercase" id="profile">
+				<h1 class="text-3xl pt-10 md:pt-24 mb-6 uppercase" id="profile">
 					Profile
 				</h1>
 			</div>
 			<div
-				class="flex w-full flex-col items-center md:items-left md:flex-row md:gap-4"
+				class="flex w-full flex-col md:items-left md:flex-row md:gap-4"
 			>
 				<div class="w-1/2 md:w-1/5">
 					<g-image
