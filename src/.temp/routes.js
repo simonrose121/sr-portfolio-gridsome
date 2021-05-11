@@ -24,6 +24,10 @@ export default [
     component: c1
   },
   {
+    path: "/project/animus/",
+    component: c1
+  },
+  {
     name: "404",
     path: "/404/",
     component: c2

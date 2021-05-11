@@ -31,6 +31,11 @@
 							/>
 						</a>
 					</div>
+					<a :href="$page.strapi.home.cvUrl" target="_blank">
+						<button class="bg-black mt-6 text-white rounded px-8">
+							CV
+						</button>
+					</a>
 				</div>
 			</div>
 			<div class="flex md:justify-end md:w-1/5">
@@ -127,6 +132,7 @@ query {
         }
         description
       }
+	  cvUrl
     }
 	global {
 		socialNetworks {
