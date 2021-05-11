@@ -17,6 +17,8 @@ import {
 	faUserAlt,
 	faChevronCircleRight,
 	faChevronCircleLeft,
+	faBars,
+	faTimes,
 } from "@fortawesome/free-solid-svg-icons";
 import {
 	faGithub,
@@ -41,7 +43,9 @@ library.add(
 	faFutbol,
 	faGlobeEurope,
 	faChevronCircleRight,
-	faChevronCircleLeft
+	faChevronCircleLeft,
+	faBars,
+	faTimes
 );
 
 export default function(Vue, { router, head, isClient }) {
