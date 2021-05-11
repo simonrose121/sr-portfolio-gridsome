@@ -15,7 +15,7 @@
 					<font-awesome :icon="hamburgerIcon" />
 				</button>
 				<nav
-					class="flex bg-primary w-screen h-screen left-0 flex-col align-left gap-4 text-sm uppercase mt-5 md:mt-auto md:items-center md:flex md:flex-row md:relative md:justify-end md:align-middle md:w-auto md:h-auto md:l-auto"
+					class="flex bg-primary w-screen h-screen left-0 flex-col align-left gap-6 text-md uppercase mt-8 md:mt-auto md:items-center md:flex md:flex-row md:relative md:justify-end md:align-middle md:w-auto md:h-auto md:l-auto md:text-sm md:gap-4"
 					:class="[menuVisible ? 'block' : 'hidden']"
 				>
 					<a href="/#profile" @click="optionClick()">Profile</a>
