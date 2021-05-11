@@ -12,7 +12,7 @@
 				<div class="w-1/2 md:w-1/5">
 					<g-image
 						:src="$page.strapi.home.imageUrl"
-						class="rounded-full"
+						class="rounded-full md:ml-auto"
 					/>
 				</div>
 				<div class="w-full mt-10 md:mt-0 md:pl-10 md:w-4/5">

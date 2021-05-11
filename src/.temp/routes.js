@@ -8,6 +8,10 @@ export default [
     component: c1
   },
   {
+    path: "/project/simon-rose/",
+    component: c1
+  },
+  {
     path: "/project/speakeasy/",
     component: c1
   },

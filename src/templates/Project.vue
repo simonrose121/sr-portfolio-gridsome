@@ -2,10 +2,14 @@
 	<Layout>
 		<div class="container">
 			<g-image
+				v-if="$page.strapi.projects[0].logo"
 				:alt="$page.strapi.projects[0].title"
 				:src="getStrapiMedia($page.strapi.projects[0].logo.url)"
-				class="mt-8 w-1/4"
+				class="mt-8 w-auto md:w-1/4"
 			/>
+			<h2 v-else class="mt-8 text-4xl">
+				{{ $page.strapi.projects[0].title }}
+			</h2>
 			<Content :content="$page.strapi.projects[0].content" class="mt-8" />
 		</div>
 	</Layout>
