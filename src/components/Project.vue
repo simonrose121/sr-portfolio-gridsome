@@ -1,6 +1,6 @@
 <template>
 	<g-link :to="'project/' + project.slug">
-		<div class="flex w-full">
+		<div class="flex w-full flex-col md:flex-row">
 			<div class="flex flex-col md:w-1/5">
 				<g-image
 					:alt="project.title"
@@ -8,7 +8,7 @@
 					class="w-auto md:ml-auto"
 				/>
 			</div>
-			<div class="flex flex-col md:pl-10 md:w-4/5">
+			<div class="flex flex-col mt-3 md:mt-0 md:pl-10 md:w-4/5">
 				<h2 class="font-bold pb-0">{{ project.title }}</h2>
 				<RichText :data="{ content: project.description }" />
 			</div>

@@ -6,17 +6,19 @@
 					Profile
 				</h1>
 			</div>
-			<div class="flex w-full md:gap-4">
-				<div class="w-full md:w-1/5">
+			<div
+				class="flex w-full flex-col items-center md:items-left md:flex-row md:gap-4"
+			>
+				<div class="w-1/2 md:w-1/5">
 					<g-image
 						:src="$page.strapi.home.imageUrl"
 						class="rounded-full"
 					/>
 				</div>
-				<div class="w-full md:pl-10 md:w-4/5">
+				<div class="w-full mt-10 md:mt-0 md:pl-10 md:w-4/5">
 					<RichText :data="{ content: $page.strapi.home.profile }" />
 					<div
-						class="flex mt-6 prose md:prose-lg md:w-1/4 justify-between"
+						class="flex mt-6 prose gap-4 md:gap-0 md:prose-lg md:w-1/4 md:justify-between"
 					>
 						<a
 							v-for="social in $page.strapi.global.socialNetworks"

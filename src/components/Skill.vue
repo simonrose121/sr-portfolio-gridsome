@@ -1,9 +1,9 @@
 <template>
-	<div class="flex w-full">
-		<div class="flex-col md:w-1/5 text-5xl text-right block relative">
+	<div class="flex w-full flex-col md:flex-row">
+		<div class="flex-col md:w-1/5 text-5xl text-left block relative">
 			<font-awesome
 				:icon="[skill.prefix, skill.icon]"
-				class="absolute top-0 right-0"
+				class="top-0 md:right-0 md:absolute"
 			/>
 		</div>
 		<div class="flex flex-col md:pl-10 md:w-2/5">
