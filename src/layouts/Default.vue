@@ -73,4 +73,10 @@ html {
 .prose ul > li::before {
 	background-color: #000;
 }
+
+@media (max-width: 640px) {
+	.container {
+		padding: 0 1.5rem;
+	}
+}
 </style>

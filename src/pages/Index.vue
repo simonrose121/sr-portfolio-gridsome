@@ -2,7 +2,7 @@
 	<Layout>
 		<div class="container">
 			<div class="flex md:justify-end md:w-1/5">
-				<h1 class="text-3xl pt-10 md:pt-24 mb-6 uppercase" id="profile">
+				<h1 class="text-3xl pt-24 mb-6 uppercase" id="profile">
 					Profile
 				</h1>
 			</div>
@@ -15,7 +15,7 @@
 						class="rounded-full md:ml-auto"
 					/>
 				</div>
-				<div class="w-full mt-10 md:mt-0 md:pl-10 md:w-4/5">
+				<div class="w-full mt-6 md:mt-0 md:pl-10 md:w-4/5">
 					<RichText :data="{ content: $page.strapi.home.profile }" />
 					<div
 						class="flex mt-6 prose gap-4 md:gap-0 md:prose-lg md:w-1/4 md:justify-between"
