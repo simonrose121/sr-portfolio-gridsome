@@ -143,7 +143,7 @@ query {
 			id
 		}
 	}
-    experiences(sort: "startDate:desc") {
+    experiences(sort: "index:asc") {
       id
       title
       description
