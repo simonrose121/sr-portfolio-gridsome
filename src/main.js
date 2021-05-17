@@ -3,7 +3,7 @@
 require("typeface-fira-sans");
 import DefaultLayout from "~/layouts/Default.vue";
 import moment from "moment";
-import VueScrollReveal from "vue-scroll-reveal";
+import VueScrollReveal from "gridsome-scroll-reveal";
 
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { config, library } from "@fortawesome/fontawesome-svg-core";
