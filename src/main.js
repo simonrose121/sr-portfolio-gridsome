@@ -3,6 +3,7 @@
 require("typeface-fira-sans");
 import DefaultLayout from "~/layouts/Default.vue";
 import moment from "moment";
+import VueScrollReveal from "vue-scroll-reveal";
 
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { config, library } from "@fortawesome/fontawesome-svg-core";
@@ -52,5 +53,6 @@ export default function(Vue, { router, head, isClient }) {
 	// Set default layout as a global component
 	Vue.component("Layout", DefaultLayout);
 	Vue.component("font-awesome", FontAwesomeIcon);
+	Vue.use(VueScrollReveal);
 	Vue.prototype.$moment = moment;
 }

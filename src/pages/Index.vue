@@ -8,6 +8,7 @@
 			</div>
 			<div
 				class="flex w-full flex-col md:items-left md:flex-row md:gap-4"
+				v-scroll-reveal.reset
 			>
 				<div class="w-1/2 md:w-1/5">
 					<g-image
@@ -38,79 +39,91 @@
 					</a>
 				</div>
 			</div>
-			<div class="flex md:justify-end md:w-1/5">
-				<h1 class="text-3xl pt-24 mb-6 uppercase" id="experience">
-					Experience
-				</h1>
+			<div v-scroll-reveal.reset>
+				<div class="flex md:justify-end md:w-1/5">
+					<h1 class="text-3xl pt-24 mb-6 uppercase" id="experience">
+						Experience
+					</h1>
+				</div>
+				<div class="flex flex-col gap-8">
+					<Experience
+						v-for="experience in $page.strapi.experiences"
+						:key="experience.id"
+						:experience="experience"
+					/>
+				</div>
 			</div>
-			<div class="flex flex-col gap-8">
-				<Experience
-					v-for="experience in $page.strapi.experiences"
-					:key="experience.id"
-					:experience="experience"
-				/>
+			<div v-scroll-reveal.reset>
+				<div class="flex md:justify-end md:w-1/5">
+					<h1 class="text-3xl pt-24 mb-6 uppercase" id="education">
+						Education
+					</h1>
+				</div>
+				<div class="flex flex-col gap-8">
+					<Experience
+						v-for="education in $page.strapi.educations"
+						:key="education.id"
+						:experience="education"
+					/>
+				</div>
 			</div>
-			<div class="flex md:justify-end md:w-1/5">
-				<h1 class="text-3xl pt-24 mb-6 uppercase" id="education">
-					Education
-				</h1>
+			<div v-scroll-reveal.reset>
+				<div class="flex md:justify-end md:w-1/5">
+					<h1 class="text-3xl pt-24 mb-6 uppercase" id="projects">
+						Projects
+					</h1>
+				</div>
+				<div class="flex flex-col gap-4">
+					<Project
+						v-for="project in $page.strapi.projects"
+						:key="project.id"
+						:project="project"
+					/>
+				</div>
 			</div>
-			<div class="flex flex-col gap-8">
-				<Experience
-					v-for="education in $page.strapi.educations"
-					:key="education.id"
-					:experience="education"
-				/>
+			<div v-scroll-reveal.reset>
+				<div class="flex md:justify-end md:w-1/5">
+					<h1 class="text-3xl pt-24 mb-6 uppercase" id="skills">
+						Skills
+					</h1>
+				</div>
+				<div class="flex flex-col gap-8">
+					<Skill
+						v-for="skill in $page.strapi.skills"
+						:key="skill.id"
+						:skill="skill"
+					/>
+				</div>
 			</div>
-			<div class="flex md:justify-end md:w-1/5">
-				<h1 class="text-3xl pt-24 mb-6 uppercase" id="projects">
-					Projects
-				</h1>
+			<div v-scroll-reveal.reset>
+				<div class="flex md:justify-end md:w-1/5">
+					<h1 class="text-3xl pt-24 mb-6 uppercase" id="publications">
+						Publications
+					</h1>
+				</div>
+				<div class="flex flex-col gap-8">
+					<a
+						v-for="publication in $page.strapi.publications"
+						:key="publication.id"
+						:href="publication.link"
+					>
+						<RichText :data="{ content: publication.citation }" />
+					</a>
+				</div>
 			</div>
-			<div class="flex flex-col gap-4">
-				<Project
-					v-for="project in $page.strapi.projects"
-					:key="project.id"
-					:project="project"
-				/>
-			</div>
-			<div class="flex md:justify-end md:w-1/5">
-				<h1 class="text-3xl pt-24 mb-6 uppercase" id="skills">
-					Skills
-				</h1>
-			</div>
-			<div class="flex flex-col gap-8">
-				<Skill
-					v-for="skill in $page.strapi.skills"
-					:key="skill.id"
-					:skill="skill"
-				/>
-			</div>
-			<div class="flex md:justify-end md:w-1/5">
-				<h1 class="text-3xl pt-24 mb-6 uppercase" id="publications">
-					Publications
-				</h1>
-			</div>
-			<div class="flex flex-col gap-8">
-				<a
-					v-for="publication in $page.strapi.publications"
-					:key="publication.id"
-					:href="publication.link"
-				>
-					<RichText :data="{ content: publication.citation }" />
-				</a>
-			</div>
-			<div class="flex md:justify-end md:w-1/5">
-				<h1 class="text-3xl pt-24 mb-6 uppercase" id="interests">
-					Interests
-				</h1>
-			</div>
-			<div class="flex flex-col gap-8">
-				<Interest
-					v-for="interest in $page.strapi.interests"
-					:key="interest.id"
-					:interest="interest"
-				/>
+			<div v-scroll-reveal.reset>
+				<div class="flex md:justify-end md:w-1/5">
+					<h1 class="text-3xl pt-24 mb-6 uppercase" id="interests">
+						Interests
+					</h1>
+				</div>
+				<div class="flex flex-col gap-8">
+					<Interest
+						v-for="interest in $page.strapi.interests"
+						:key="interest.id"
+						:interest="interest"
+					/>
+				</div>
 			</div>
 		</div>
 	</Layout>
@@ -143,7 +156,7 @@ query {
 			id
 		}
 	}
-    experiences(sort: "index:asc") {
+    experiences(sort: "startDate:desc") {
       id
       title
       description
