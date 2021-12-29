@@ -156,7 +156,7 @@ query {
 			id
 		}
 	}
-	experiences(sort: "index:desc") {
+	experiences(sort: "index:asc") {
 		id
 		title
 		description
