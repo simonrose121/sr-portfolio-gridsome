@@ -1,5 +1,5 @@
-import plugin_gridsome_plugin_tailwindcss_6 from "C:\\Users\\Simon\\documents\\portfolio-strapi-gridsome\\frontend\\node_modules\\gridsome-plugin-tailwindcss\\gridsome.client.js"
-import plugin_gridsome_plugin_google_analytics_7 from "C:\\Users\\Simon\\documents\\portfolio-strapi-gridsome\\frontend\\node_modules\\@gridsome\\plugin-google-analytics\\gridsome.client.js"
+import plugin_gridsome_plugin_tailwindcss_6 from "/Users/simonrose/Documents/dev/srs/sr-portfolio-gridsome/node_modules/gridsome-plugin-tailwindcss/gridsome.client.js"
+import plugin_gridsome_plugin_google_analytics_7 from "/Users/simonrose/Documents/dev/srs/sr-portfolio-gridsome/node_modules/@gridsome/plugin-google-analytics/gridsome.client.js"
 
 export default [
   {

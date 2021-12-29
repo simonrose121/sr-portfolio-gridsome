@@ -1,10 +1,14 @@
-const c1 = () => import(/* webpackChunkName: "page--src-templates-project-vue" */ "C:\\Users\\Simon\\documents\\portfolio-strapi-gridsome\\frontend\\src\\templates\\Project.vue")
-const c2 = () => import(/* webpackChunkName: "page--src-pages-404-vue" */ "C:\\Users\\Simon\\documents\\portfolio-strapi-gridsome\\frontend\\src\\pages\\404.vue")
-const c3 = () => import(/* webpackChunkName: "page--src-pages-index-vue" */ "C:\\Users\\Simon\\documents\\portfolio-strapi-gridsome\\frontend\\src\\pages\\Index.vue")
+const c1 = () => import(/* webpackChunkName: "page--src--templates--project-vue" */ "/Users/simonrose/Documents/dev/srs/sr-portfolio-gridsome/src/templates/Project.vue")
+const c2 = () => import(/* webpackChunkName: "page--src--pages--404-vue" */ "/Users/simonrose/Documents/dev/srs/sr-portfolio-gridsome/src/pages/404.vue")
+const c3 = () => import(/* webpackChunkName: "page--src--pages--index-vue" */ "/Users/simonrose/Documents/dev/srs/sr-portfolio-gridsome/src/pages/Index.vue")
 
 export default [
   {
     path: "/project/simon-rose-software/",
+    component: c1
+  },
+  {
+    path: "/project/rose-brothers-digital/",
     component: c1
   },
   {
@@ -20,11 +24,11 @@ export default [
     component: c1
   },
   {
-    path: "/project/cognitive-function-task/",
+    path: "/project/numeralis/",
     component: c1
   },
   {
-    path: "/project/animus/",
+    path: "/project/cognitive-function-task/",
     component: c1
   },
   {
