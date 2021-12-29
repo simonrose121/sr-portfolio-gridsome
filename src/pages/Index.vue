@@ -156,17 +156,17 @@ query {
 			id
 		}
 	}
-    experiences(sort: "startDate:desc") {
-      id
-      title
-      description
-      institution
-      logo {
-        url
-      }
-      startDate
-      endDate
-    }
+	experiences(sort: "index:desc") {
+		id
+		title
+		description
+		institution
+		logo {
+			url
+		}
+		startDate
+		endDate
+	}
 	educations(sort: "startDate:desc") {
       id
       title
